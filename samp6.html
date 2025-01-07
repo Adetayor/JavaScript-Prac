@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prompt & Forms</title>
+  <style>
+      dt{
+        font-weight: bold;
+      }
+  </style>
   <script>
       function Create(){
           var name=prompt("folder name: ", "New_Folder");
@@ -28,6 +33,7 @@
             document.getElementById("lblPrice").innerText=price;
             document.getElementById("lblMfd").innerText=mfd;
             document.getElementById("lblStock").innerText=stock;
+            document.getElementById("lblCity").innerText=city;
         }
   </script>
 </head>
@@ -50,8 +56,8 @@
                     <dt>Product Manufactured</dt>
                     <dd><input type="date" id="txtMfd"><dd>
                     <dt>Product Is In Stock</dt>
-                    <dd><input type="radio" name="stock" value="Available" id="optYes">
-                      <input type="radio" name="stock" value="Out-of-stock" id="optNo"><dd>
+                    <dd><input type="radio" name="stock" value="Available" id="optYes">Yes
+                      <input type="radio" name="stock" value="out-of-stock" id="optNo">No<dd>
                     <dt>Shipped to</dt>
                     <dd>
                         <select id="lstsCities">
@@ -61,7 +67,7 @@
                     </dd>
                   </dl>
                   <br>
-                  <input type="button" value="Register" onclick="">
+                  <input type="button" value="Register" onclick="Register()">
             </fieldset>
             <br>
             <fieldset id="showDetails">
@@ -78,16 +84,14 @@
                       <tr>
                         <td>Product Price</td>
                         <td id="lblPrice"></td>
-                      </tr>
-                      
-                      
+                      </tr> 
                       <tr>
                         <td>Product In Stock</td>
                         <td id="lblStock"></td>
                       </tr>
                       <tr>
-                        <td></td>
-                        <td id="lblMfd"></td>
+                        <td>Shipped to</td>
+                        <td id="lblCity"></td>
                       </tr>
                   </table>
             </fieldset>

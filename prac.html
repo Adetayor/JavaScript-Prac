@@ -16,8 +16,10 @@
       }
       f1();
       function bodyload(){
-          window.document.images[0].src="car.jpg";
+          window.document.images[0].src="images/photo4.jpg";
           window.document.forms[0].elements[1].value="Register";
+          pic.src="images/photo3.jpg";
+          Home.btnRegister.value="Register";
       }
    </script>
    <script src="xternal.js"></script>
@@ -35,14 +37,14 @@
         <h2>click to print</h2>
         <input type="button" value="print" onclick="f1()">
         <br>
-        <img width="200" height="200" border="1">
+        <img alt="astin" width="200" height="200" border="1"/>
     </div>
     <div>
         <form>
           Name : <input type="text">
                  <input type="button">
         </form>
-        <img name="pic" width="300" height="300" border="1">
+        <img alt="lambo" name="pic" width="300" height="300" border="1"/>
     </div>
 </body>
 </html>
